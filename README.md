@@ -4,6 +4,8 @@
 
 ## Welcome to GitHub Pages
 
+[test](./installation.html)
+
 You can use the [editor on GitHub](https://github.com/SU2CLC/su2_clc/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
