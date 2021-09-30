@@ -1,0 +1,14 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+  .page-header {
+    padding: 2rem 6rem;
+    /*EN DESSOUS: PARAMÈTRES DE BASE POUR LE FOND DE LA BARRE*/
+    color: #fff;
+    text-align: center;
+    background-color: #159957;
+    background-image: linear-gradient(120deg, #155799, #159957);
+  }
+
