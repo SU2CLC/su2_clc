@@ -21,16 +21,17 @@
   .project-tagline {
     font-size: 32px; //Taille du sous-titre de la page
     text-align: left;
+    color: #fff;
   }
 
   .btn { //Couleur des boutons
     background-color: #2A6907;
-    color: #FFFFFF;
+    color: #fff;
     border-color: #215405;
   }
 
   .btn:hover { //Couleur des boutons quand on passe la souris dessus
     background-color: #215405;
-    color: #FFFFFF;
+    color: #fff;
     border-color: #193F04;
   }
