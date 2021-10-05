@@ -22,3 +22,15 @@
     font-size: 32px; //Taille du sous-titre de la page
     text-align: left;
   }
+
+  .btn { //Couleur des boutons
+    background-color: #2A6907;
+    color: #FFFFFF;
+    border-color: #215405;
+  }
+
+  .btn:hover { //Couleur des boutons quand on passe la souris dessus
+    background-color: #215405;
+    color: #FFFFFF;
+    border-color: #193F04;
+  }
