@@ -4,6 +4,7 @@
 @import "{{ site.theme }}";
 
   .page-header {
+    /*TAILLE DE LA BARRE*/
     padding: 2rem 6rem;
     /*EN DESSOUS: PARAMÈTRES DE BASE POUR LE FOND DE LA BARRE*/
     color: #fff;
@@ -13,11 +14,11 @@
   }
 
   .project-name {
-    font-size: 68px;
+    font-size: 68px; //Taile du titre de la page
     text-align: left;
   }
 
   .project-tagline {
-    font-size: 32px;
+    font-size: 32px; //Taille du sous-titre de la page
     text-align: left;
   }
