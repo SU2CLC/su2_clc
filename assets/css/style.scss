@@ -25,13 +25,18 @@
   }
 
   .btn { //Couleur des boutons
-    background-color: #2A6907;
-    color: #fff;
-    border-color: #215405;
+    background-color: #fff;
+    color: #000000;
+    border-color: #dddddd;
   }
 
   .btn:hover { //Couleur des boutons quand on passe la souris dessus
-    background-color: #215405;
-    color: #fff;
-    border-color: #193F04;
+    background-color: #dddddd;
+    color: #000000;
+    border-color: #b0b0b0;
+  }
+
+  .lien_github {
+    float: right;
+    height: 50px;
   }
