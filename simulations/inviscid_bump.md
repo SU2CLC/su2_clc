@@ -1,4 +1,4 @@
-# [Bosse dans un canal | Écoulement non visquex](https://su2code.github.io/tutorials/Inviscid_Bump/)
+# [Bosse dans un canal | Écoulement non visqueux](https://su2code.github.io/tutorials/Inviscid_Bump/)
 
 ## Objectifs
 Après avoir terminé ce tutoriel, l'utilisateur sera familiarisé avec la simulation d'un écoulement interne non visqueux en géométrie 2D. La géométrie spécifique choisie pour ce tutoriel est un canal avec une bosse le long de la paroi inférieure. Par conséquent, les capacités suivantes de SU2 seront présentées dans ce tutoriel :
