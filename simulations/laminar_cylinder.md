@@ -32,7 +32,7 @@ Des conditions aux limites de champ lointain sont utilisées à la limite extér
 
 Maillage du cylindre:
 
-![alt text](https://github.com/SU2CLC/su2_clc/blob/main/simulations/figures/laminar_cylinder_mesh.png "Maillage du cylindre")
+![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/simulations/figures/laminar_cylinder_mesh.png "Maillage du cylindre")
 
 ## Configuration du problème
 Ce problème résoudra l'écoulement externe compressible sur le cylindre avec les conditions suivantes :
@@ -99,8 +99,8 @@ Les fichiers contenant les résultats seront écrits à l'arrêt de SU2.
 Ouvrez alors les fichiers `.vtu` dans Paraview
 On peut alors visualiser les différentes sorties de SU2 tel que la viscosité ou le nombre de Mach autour du cylindre:
 
-![alt text](https://github.com/SU2CLC/su2_clc/blob/main/simulations/figures/laminar_cylinder_mach.png "Nombre de Mach autour du cylindre")
+![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/simulations/figures/laminar_cylinder_mach.png "Nombre de Mach autour du cylindre")
 Visualisation du nombre de Mach.
 
-![alt text](https://github.com/SU2CLC/su2_clc/blob/main/simulations/figures/laminar_cylinder_viscosity.png "Viscosité autour du cylindre")
+![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/simulations/figures/laminar_cylinder_viscosity.png "Viscosité autour du cylindre")
 Visualisation du nombre de Mach.
