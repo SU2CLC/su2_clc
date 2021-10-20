@@ -6,11 +6,10 @@ La géométrie spécifique choisie pour ce tutoriel est un cylindre. Par conséq
 
 - Équations Navier-Stokes laminaires 2D en régime permanent
 - Multigrille
-- Schéma convectif de Roe dans l'espace (2e ordre, vent debout)
-- Schéma visqueux moyen des gradients corrigé
+- Schéma convectif de Roe dans l'espace (2e ordre)
+- Schéma visqueux moyen des gradients corrigés
 - Intégration temporelle implicite d'Euler
 - Conditions aux limites de Navier-Stokes pour la paroi (sans glissement) et le champ lointain.
-- Dans ce tutoriel, nous discutons de certaines options de méthodes numériques, y compris comment activer un limiteur de pente pour les méthodes upwind.
 
 ## Ressources
 Les ressources pour ce tutoriel peuvent être trouvées dans le répertoire [compressible_flow/Laminar_Cylinder](https://github.com/su2code/Tutorials/tree/master/compressible_flow/Laminar_Cylinder) dans le [dépôt de tutoriel](https://github.com/su2code/Tutorials).
