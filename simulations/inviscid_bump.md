@@ -21,7 +21,7 @@ Il est supposé que vous avez déjà installé SU2_CFD. Si ce n'est fait, veuill
 Cet exemple utilise une géométrie de canal 2D qui présente une bosse circulaire le long de la paroi inférieure.
 Il s'agit d'un test simple en écoulement non visqueux pour les conditions limites d'entrée et de sortie subsoniques qui sont requises pour le calcul d'un écoulement interne.
 
-## escription du maillage
+## Description du maillage
 Le canal est de longueur 3L avec une hauteur L et une bosse circulaire centrée le long de la paroi inférieure avec une hauteur 0.1L.
 Pour le maillage SU2, L = 1.0 a été choisi, comme le montre la figure du maillage ci-dessous. 
 
