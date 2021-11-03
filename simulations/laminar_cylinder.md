@@ -103,3 +103,6 @@ Visualisation du nombre de Mach.
 
 ![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/simulations/figures/laminar_cylinder_viscosity.png "Viscosité autour du cylindre")
 Visualisation du nombre de Mach.
+
+![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/simulations/figures/laminar_cylinder_residual.png "Résidu")
+Visualisation des résidus, en bleu rms(rho) nous indique que les résidus sont à 10^(-15) en fin de simulation.
