@@ -5,7 +5,7 @@ Après avoir terminé ce tutoriel, l'utilisateur sera familiarisé avec la simul
 
 - Équations d'Euler 2D
 - Conditions aux limites de l'entrée, de la sortie et de la paroi
-- Le but de ce tutoriel est d'introduire un problème simple d'écoulement inviscide et d'expliquer comment les marqueurs de frontières sont utilisés dans SU2. Ce tutoriel est utile pour montrer comment un calcul d'écoulement interne peut être effectué en utilisant les conditions limites d'entrée et de sortie.
+- Le but de ce tutoriel est d'introduire un problème simple d'écoulement non visqueux et d'expliquer comment les marqueurs de frontières sont utilisés dans SU2. Ce tutoriel est utile pour montrer comment un calcul d'écoulement interne peut être effectué en utilisant les conditions limites d'entrée et de sortie.
 
 ## Ressources
 Vous pouvez trouver les ressources pour ce tutoriel dans le dossier [compressible_flow/Inviscid_Bump](https://github.com/su2code/Tutorials/blob/master/compressible_flow/Inviscid_Bump/) dans le [dépôt de tutoriel](https://github.com/su2code/Tutorials). Vous aurez besoin du fichier de maillage [mesh_channel_256x128.su2](https://github.com/su2code/Tutorials/blob/master/compressible_flow/Inviscid_Bump/mesh_channel_256x128.su2) et du fichier config [inv_channel.cfg](https://github.com/su2code/Tutorials/blob/master/compressible_flow/Inviscid_Bump/inv_channel.cfg).
