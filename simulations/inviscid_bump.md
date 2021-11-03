@@ -3,12 +3,9 @@
 ## Objectifs
 Après avoir terminé ce tutoriel, l'utilisateur sera familiarisé avec la simulation d'un écoulement interne non visqueux en géométrie 2D. La géométrie spécifique choisie pour ce tutoriel est un canal avec une bosse le long de la paroi inférieure. Par conséquent, les capacités suivantes de SU2 seront présentées dans ce tutoriel :
 
-- Équations d'Euler 2D stables
-- Multigrille
-- Schéma convectif JST dans l'espace (2nd-order, centré)
-- Intégration temporelle implicite d'Euler
-- Conditions aux limites de l'entrée, de la sortie et de la paroi d'Euler.
-- Le but de ce tutoriel est d'introduire un problème simple d'écoulement inviscide et d'expliquer comment les marqueurs de frontières sont utilisés dans SU2. Ce tutoriel est particulièrement utile pour montrer comment un calcul d'écoulement interne peut être effectué en utilisant les conditions limites d'entrée et de sortie.
+- Équations d'Euler 2D
+- Conditions aux limites de l'entrée, de la sortie et de la paroi
+- Le but de ce tutoriel est d'introduire un problème simple d'écoulement inviscide et d'expliquer comment les marqueurs de frontières sont utilisés dans SU2. Ce tutoriel est utile pour montrer comment un calcul d'écoulement interne peut être effectué en utilisant les conditions limites d'entrée et de sortie.
 
 ## Ressources
 Vous pouvez trouver les ressources pour ce tutoriel dans le dossier [compressible_flow/Inviscid_Bump](https://github.com/su2code/Tutorials/blob/master/compressible_flow/Inviscid_Bump/) dans le [dépôt de tutoriel](https://github.com/su2code/Tutorials). Vous aurez besoin du fichier mesh [mesh_channel_256x128.su2](https://github.com/su2code/Tutorials/blob/master/compressible_flow/Inviscid_Bump/mesh_channel_256x128.su2) et du fichier config [inv_channel.cfg](https://github.com/su2code/Tutorials/blob/master/compressible_flow/Inviscid_Bump/inv_channel.cfg).
@@ -89,15 +86,11 @@ TIME_DISCRE_FLOW= EULER_IMPLICIT
 % 
 % Courant-Friedrichs-Lewy condition of the finest grid
 CFL_NUMBER= 50.0
-%
-% Multi-Grid Levels (0 = no multi-grid)
-MGLEVEL= 3
 ```
 
 En général, les utilisateurs peuvent choisir entre l'intégration temporelle explicite ou implicite.
 Pour la majorité des problèmes, l'intégration implicite est recommandée pour sa plus grande stabilité et son meilleur potentiel de convergence, en particulier pour les problèmes stables.
-Les méthodes implicites offrent généralement une stabilité à des nombres CFL plus élevés, et pour ce problème, l'intégration temporelle implicite d'Euler avec un nombre CFL de 50 est choisie, ainsi que l'adaptation automatique CFL.
-La convergence est également accélérée par trois niveaux de multigrille. Nous aborderons certaines de ces options dans des tutoriels ultérieurs.
+Les méthodes implicites offrent généralement une stabilité à des nombres CFL plus élevés, et pour ce problème, l'intégration temporelle implicite d'Euler avec un nombre CFL de 50 est choisie.
 
 ### Définition des critères de convergence :
 
