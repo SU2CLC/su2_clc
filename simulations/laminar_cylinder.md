@@ -80,7 +80,7 @@ Allez dans le répertoire contenant le fichier de configuration (lam_cylinder.cf
 Pour se faire, exécutez la commande suivante:
 
 ```
-cd $chemin_vers_le_dossier$
+cd chemin_vers_le_dossier
 ```
 
 Assurez-vous que les outils SU2 ont été installés et que leur emplacement d'installation a été ajouté à votre PATH.
