@@ -3,15 +3,12 @@
 ## Objectifs
 Après avoir terminé ce tutoriel, l'utilisateur sera familiarisé avec la simulation d'un écoulement interne non visqueux en géométrie 2D. La géométrie spécifique choisie pour ce tutoriel est un canal avec une bosse le long de la paroi inférieure. Par conséquent, les capacités suivantes de SU2 seront présentées dans ce tutoriel :
 
-- Équations d'Euler 2D stables
-- Multigrille
-- Schéma convectif JST dans l'espace (2nd-order, centré)
-- Intégration temporelle implicite d'Euler
-- Conditions aux limites de l'entrée, de la sortie et de la paroi d'Euler.
-- Le but de ce tutoriel est d'introduire un problème simple d'écoulement non visqueux et d'expliquer comment les marqueurs de frontières sont utilisés dans SU2. Ce tutoriel est particulièrement utile pour montrer comment un calcul d'écoulement interne peut être effectué en utilisant les conditions limites d'entrée et de sortie.
+- Équations d'Euler 2D
+- Conditions aux limites de l'entrée, de la sortie et de la paroi
+- Le but de ce tutoriel est d'introduire un problème simple d'écoulement non visqueux et d'expliquer comment les marqueurs de frontières sont utilisés dans SU2. Ce tutoriel est utile pour montrer comment un calcul d'écoulement interne peut être effectué en utilisant les conditions limites d'entrée et de sortie.
 
 ## Ressources
-Vous pouvez trouver les ressources pour ce tutoriel dans le dossier [compressible_flow/Inviscid_Bump](https://github.com/su2code/Tutorials/blob/master/compressible_flow/Inviscid_Bump/) dans le [dépôt de tutoriel](https://github.com/su2code/Tutorials). Vous aurez besoin du fichier mesh [mesh_channel_256x128.su2](https://github.com/su2code/Tutorials/blob/master/compressible_flow/Inviscid_Bump/mesh_channel_256x128.su2) et du fichier config [inv_channel.cfg](https://github.com/su2code/Tutorials/blob/master/compressible_flow/Inviscid_Bump/inv_channel.cfg).
+Vous pouvez trouver les ressources pour ce tutoriel dans le dossier [compressible_flow/Inviscid_Bump](https://github.com/su2code/Tutorials/blob/master/compressible_flow/Inviscid_Bump/) dans le [dépôt de tutoriel](https://github.com/su2code/Tutorials). Vous aurez besoin du fichier de maillage [mesh_channel_256x128.su2](https://github.com/su2code/Tutorials/blob/master/compressible_flow/Inviscid_Bump/mesh_channel_256x128.su2) et du fichier config [inv_channel.cfg](https://github.com/su2code/Tutorials/blob/master/compressible_flow/Inviscid_Bump/inv_channel.cfg).
 
 ## Tutoriel
 Le tutoriel suivant vous guidera à travers les étapes requises pour résoudre l'écoulement à travers le canal en utilisant SU2.
@@ -28,7 +25,7 @@ Pour le maillage SU2, L = 1.0 a été choisi, comme le montre la figure du maill
 ![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/simulations/figures/inviscid_bump_mesh.png "Maillage du tuyau avec une bosse circulaire sur la paroi inférieure")
 
 ## Configuration du problème
-Ce tutoriel résoudra le problème de l'écoulement à travers le canal avec les conditions suivantes :
+Ce tutoriel va permettre de résoudre le problème de l'écoulement à travers le canal avec les conditions suivantes :
 
 - Température de stagnation à l'entrée = 288.6 K
 - Pression de stagnation à l'entrée = 102010.0 N/m2
@@ -89,15 +86,11 @@ TIME_DISCRE_FLOW= EULER_IMPLICIT
 % 
 % Courant-Friedrichs-Lewy condition of the finest grid
 CFL_NUMBER= 50.0
-%
-% Multi-Grid Levels (0 = no multi-grid)
-MGLEVEL= 3
 ```
 
 En général, les utilisateurs peuvent choisir entre l'intégration temporelle explicite ou implicite.
 Pour la majorité des problèmes, l'intégration implicite est recommandée pour sa plus grande stabilité et son meilleur potentiel de convergence, en particulier pour les problèmes stables.
-Les méthodes implicites offrent généralement une stabilité à des nombres CFL plus élevés, et pour ce problème, l'intégration temporelle implicite d'Euler avec un nombre CFL de 50 est choisie, ainsi que l'adaptation automatique CFL.
-La convergence est également accélérée par trois niveaux de multigrille. Nous aborderons certaines de ces options dans des tutoriels ultérieurs.
+Les méthodes implicites offrent généralement une stabilité à des nombres CFL plus élevés, et pour ce problème, l'intégration temporelle implicite d'Euler avec un nombre CFL de 50 est choisie.
 
 ### Définition des critères de convergence :
 
@@ -126,7 +119,7 @@ Pour exécuter ce cas de test, suivez ces étapes à la ligne de commande d'un t
 Déplacez-vous dans le répertoire contenant le fichier de configuration (inv_channel.cfg) et le fichier de maillage (mesh_channel_256x128.su2).
 Pour ce faire vous pouvez exécuter la commande suivante:
 ```
-cd $chemin_vers_le_dossier$
+cd chemin_vers_le_dossier
 ```
 
 Assurez-vous que les outils SU2 ont été compilés, installés et que leur emplacement d'installation a été ajouté à votre path (sinon, voir [Installation](https://su2clc.github.io/su2_clc/installation).
@@ -148,3 +141,11 @@ Visualisation du nombre de Mach.
 
 ![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/simulations/figures/inviscid_bump_pressure.png "Visualisation de la pression")
 Visualisation de la pression.
+
+![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/simulations/figures/inviscid_bump_residual.png "Visualisation du résidu")
+Visualisation du résidu (rms(rho) en bleu).
+
+![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/simulations/figures/inviscid_bump_residualStop.png "Arrêt de la simulation")
+Arrêt de la simulation pour un résidu de 10^(-10).
+
+Les résidus sont données en log10, c'est à dire que pour -10 (valeur choisie dans le fichier de configuration) on a en fait un résidu de 10^(-10).

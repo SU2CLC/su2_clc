@@ -80,7 +80,7 @@ Allez dans le répertoire contenant le fichier de configuration (lam_cylinder.cf
 Pour se faire, exécutez la commande suivante:
 
 ```
-cd $chemin_vers_le_dossier$
+cd chemin_vers_le_dossier
 ```
 
 Assurez-vous que les outils SU2 ont été installés et que leur emplacement d'installation a été ajouté à votre PATH.
@@ -103,3 +103,6 @@ Visualisation du nombre de Mach.
 
 ![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/simulations/figures/laminar_cylinder_viscosity.png "Viscosité autour du cylindre")
 Visualisation du nombre de Mach.
+
+![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/simulations/figures/laminar_cylinder_residual.png "Résidu")
+Visualisation des résidus, en bleu rms(rho) nous indique que les résidus sont à 10^(-15) en fin de simulation.
