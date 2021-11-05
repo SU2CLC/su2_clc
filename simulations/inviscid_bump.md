@@ -22,7 +22,7 @@ Il s'agit d'un test simple en écoulement non visqueux pour les conditions limit
 Le canal est de longueur 3L avec une hauteur L et une bosse circulaire centrée le long de la paroi inférieure avec une hauteur 0.1L.
 Pour le maillage SU2, L = 1.0 a été choisi, comme le montre la figure du maillage ci-dessous. 
 
-![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/simulations/figures/inviscid_bump_mesh.png "Maillage du tuyau avec une bosse circulaire sur la paroi inférieure")
+![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/simulations/figures/inviscid_bump/mesh.png "Maillage du tuyau avec une bosse circulaire sur la paroi inférieure")
 
 ## Configuration du problème
 Ce tutoriel va permettre de résoudre le problème de l'écoulement à travers le canal avec les conditions suivantes :
@@ -136,16 +136,16 @@ Les fichiers contenant les résultats seront écrits à la sortie de SU2.
 Ouvrez alors les fichiers `.vtu` dans Paraview
 On peut alors visualiser les différentes sorties de SU2 tel que le nombre de Mach ou la Pression dans le tuyau.
 
-![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/simulations/figures/inviscid_bump_mach.png "Visualisation du nombre de Mach")
+![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/simulations/figures/inviscid_bump/mach.png "Visualisation du nombre de Mach")
 Visualisation du nombre de Mach.
 
-![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/simulations/figures/inviscid_bump_pressure.png "Visualisation de la pression")
+![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/simulations/figures/inviscid_bump/pressure.png "Visualisation de la pression")
 Visualisation de la pression.
 
-![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/simulations/figures/inviscid_bump_residual.png "Visualisation du résidu")
+![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/simulations/figures/inviscid_bump/residual.png "Visualisation du résidu")
 Visualisation du résidu (rms(rho) en bleu).
 
-![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/simulations/figures/inviscid_bump_residualStop.png "Arrêt de la simulation")
+![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/simulations/figures/inviscid_bump/residualStop.png "Arrêt de la simulation")
 Arrêt de la simulation pour un résidu de 10^(-10).
 
 Les résidus sont données en log10, c'est à dire que pour -10 (valeur choisie dans le fichier de configuration) on a en fait un résidu de 10^(-10).
