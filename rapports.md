@@ -5,26 +5,40 @@ title: Rapports de PE
 
 # Rapports de séance
 
-- **(22/09/2022)**
-    - [rapport]()
-- **(2021/10/06 et 2021/09/29)**
-    - [rapport]()
-- **(2021/10/20)** 
-    - [rapport]()
-- **(2021/11/03)**
-    - [rapport]()
-- **(2021/11/10)**
-    - [rapport]()
-- **(2022/03/02)**
-    - [rapport]()
-- **(2022/03/09)**
-    - [rapport]()
-- **(2022/03/16)**
-    - [rapport]()
+Ici, nous répertorions les rapports des séances de PE. Il s'agit de connaître notre avancement sur la séance, potentiellement les points de blocage, et ce que nous avons appris.
 
-[](./rapports/laminar_cylinder.html)
+Ils sont particulièrement utiles, car nous souhaitons capitaliser sur les points de blocage en organisant une section FaQ.
+
+- **22/09/2022**
+    - [rapport](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/rapports/2021:09:22.pdf)
+- **2021/10/06 et 2021/09/29**
+    - [rapport](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/rapports/2021:10:06%20et%202021:09:29.pdf)
+- **2021/10/20** 
+    - [rapport](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/rapports/2021:10:20.pdf)
+- **2021/11/03**
+    - [rapport](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/rapports/2021:11:03.pdf)
+    - [channel.geo](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/fichiers/channel1.geo)
+- **2021/11/10**
+    - [rapport](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/rapports/2021:11:10.pdf)
+    - [channel.geo](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/fichiers/channel2.geo)
+    - [inv_channel.cfg](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/fichiers/inv_channel.cfg)
+- **2022/02/09**
+    - [CR](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/fichiers/CR1.png)
+    - [balle.geo](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/fichiers/balle.geo)
+    - [balle.su2](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/fichiers/balle.su2)
+    - [balle.cfg](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/fichiers/balle.cfg)
+- **2022/03/02**
+    - [rapport](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/rapports/2022:03:02.pdf)
+- **2022/03/09**
+    - [rapport](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/rapports/2022:03:09.pdf)
+- **2022/03/16**
+    - [rapport](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/rapports/2022:03:16.pdf)
+    - [SOCBT.geo](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/fichiers/SOCBT1.geo)
+    - [SOCBT.su2](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/fichiers/SOCBT1.su2)
+    - [SOCBT.cfg](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/fichiers/SOCBT1.cfg)
+    - [tuy.geo](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/fichiers/tuy1.geo)
 
 # Rendus
 
-[Rapport RVP1 (2021/12/08)](./rapports/RVP1)
-[Rapport RVP2 (2022/03/23)](./rapports/RVP2)
+- [Rapport RVP1 (2021/12/08)](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/rapports/Rapport%20RVP1%20(2021:12:08).pdf)
+- [Rapport RVP2 (2022/03/23)](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/rapports/Rapport%20RVP2%20(2022:03:23).pdf)
