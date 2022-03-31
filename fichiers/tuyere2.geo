@@ -1,86 +1,44 @@
-// Gmsh project created on Wed Mar 30 16:38:59 2022
-SetFactory("OpenCASCADE");
-//+
-SetFactory("OpenCASCADE");
-//+
-SetFactory("OpenCASCADE");
-//+
-SetFactory("Built-in");
-//+
-SetFactory("Built-in");
-//+
-lc = DefineNumber[ 0.1, Name "Parameters/lc" ];
-//+
-Point(1) = {0, 2.5, 0, 1.0};
-//+
-Point(2) = {0.1, 1.96, 0, 1.0};
-//+
-Point(3) = {0.2, 1.54, 0, 1.0};
-//+
-Point(4) = {0.3, 2.48, 0, 1.0};
-//+
-Point(5) = {0.3, 1.24, 0, 1.0};
-//+
-Recursive Delete {
-  Point{4}; 
-}
-//+
-Point(6) = {0.4, 1.06, 0, 1.0};
-//+
-Point(7) = {0.5, 1, 0, 1.0};
-//+
-Point(8) = {0.6, 1.02, 0, 1.0};
-//+
-Point(9) = {0.7, 1.08, 0, 1.0};
-//+
-Point(10) = {0.8, 1.18, 0, 1.0};
-//+
-Point(11) = {0.9, 1.32, 0, 1.0};
-//+
-Point(12) = {1, 1.5, 0, 1.0};
-//+
+cl__1 = 1;
+Point(1) = {0, 2.5, 0, cl__1};
+Point(2) = {0.1, 1.96, 0, cl__1};
+Point(3) = {0.2, 1.54, 0, cl__1};
+Point(5) = {0.3, 1.24, 0, cl__1};
+Point(6) = {0.4, 1.06, 0, cl__1};
+Point(7) = {0.5, 1, 0, cl__1};
+Point(8) = {0.6, 1.02, 0, cl__1};
+Point(9) = {0.7, 1.08, 0, cl__1};
+Point(10) = {0.8, 1.18, 0, cl__1};
+Point(11) = {0.9, 1.32, 0, cl__1};
+Point(12) = {1, 1.5, 0, cl__1};
+Point(13) = {0, 0, 0, cl__1};
+Point(14) = {1, 0, 0, cl__1};
 Bezier(1) = {1, 2};
-//+
+Transfinite Line {1} = 50 Using Progression 1;
 Bezier(2) = {2, 3};
-//+
+Transfinite Line {2} = 50 Using Progression 1;
 Bezier(3) = {3, 5};
-//+
+Transfinite Line {3} = 50 Using Progression 1;
 Bezier(4) = {5, 6};
-//+
+Transfinite Line {4} = 50 Using Progression 1;
 Bezier(5) = {6, 7};
-//+
+Transfinite Line {5} = 50 Using Progression 1;
 Bezier(6) = {7, 8};
-//+
+Transfinite Line {6} = 50 Using Progression 1;
 Bezier(7) = {8, 9};
-//+
+Transfinite Line {7} = 50 Using Progression 1;
 Bezier(8) = {9, 10};
-//+
+Transfinite Line {8} = 50 Using Progression 1;
 Bezier(9) = {10, 11};
-//+
+Transfinite Line {9} = 50 Using Progression 1;
 Bezier(10) = {11, 12};
-//+
-Point(13) = {0, 0, 0, 1.0};
-//+
-Point(14) = {1, 0, 0, 1.0};
-//+
+Transfinite Line {10} = 50 Using Progression 1;
 Line(11) = {13, 14};
-//+
 Line(12) = {13, 1};
-//+
 Line(13) = {14, 12};
-//+
-Physical Curve("axis", 14) = {11};
-//+
-Physical Curve("inlet", 15) = {12};
-//+
-Physical Curve("outlet", 16) = {13};
-//+
-Physical Curve("wall", 17) = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-//+
 Curve Loop(1) = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -13, -11, 12};
-//+
 Plane Surface(1) = {1};
-//+
-Physical Surface("flowfield", 18) = {1};
-//+
-Transfinite Curve {1, 2, 3, 4, 5, 6, 7, 8, 9, 10} = 50 Using Progression 1;
+Physical Curve("axis") = {11};
+Physical Curve("inlet") = {12};
+Physical Curve("outlet") = {13};
+Physical Curve("wall") = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+Physical Surface("flowfield") = {1};

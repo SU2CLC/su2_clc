@@ -236,3 +236,7 @@ Recombine Surface {5};
 Recombine Surface {3};
 //+
 Recombine Surface {2};
+//+
+Transfinite Surface {3} = {4, 10, 20, 17};
+//+
+Recombine Surface {3};
