@@ -35,7 +35,7 @@ Si vous avez fait une erreur, sous la section Module, au-dessus du Edit Script, 
 
 Ensuite, nous revenons à Add de Geometry, nous trouvons la surface plane et l'utilisons pour définir une face fermée, et enfin nous générons le maillage en utilisant l'option 2D dans Mesh.
 
-![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/annexes/figures/gmsh4.png "Obtention d'un maillage")
+![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/annexes/figures/gmsh5.png "Obtention d'un maillage")
 
 Pour modifier la forme du maillage (locale ou globale), vous pouvez également choisir de remodeler le maillage d'une surface en un rectangle en utilisant mesh-define-recombine.
 
