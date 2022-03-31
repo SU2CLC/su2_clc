@@ -40,9 +40,11 @@ Ils sont particulièrement utiles, car nous souhaitons capitaliser sur les point
 - **2022/03/30**
     - [rapport](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/rapports/2022:03:30.pdf)
     - [tuyere.geo](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/fichiers/tuyere2.geo)
+    - [tuyere.su2](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/fichiers/tuyere2.su2)
     - [tuyere.cfg (pas encore fonctionnel)](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/fichiers/tuyere2.cfg)
     - [wedge.cfg](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/fichiers/wedge.cfg)
     - [wedge.geo](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/fichiers/wedge.geo)
+    - [wedge.su2](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/fichiers/wedge.su2)
     - [SOCBT.geo](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/fichiers/SOCBT2.geo)
     - [SOCBT.su2](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/fichiers/SOCBT2.su2)
 
