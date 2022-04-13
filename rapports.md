@@ -50,7 +50,7 @@ Ils sont particulièrement utiles, car nous souhaitons capitaliser sur les point
 - **2022/04/13**
     - [rapport](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/rapports/2022:04:13.pdf)
     - [laval.su2](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/fichiers/laval.su2)
-    - [laval.cfg (pas les bonnes conditions initiales)](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/fichiers/laval.cfg)
+    - [laval.cfg (pas les bonnes conditions aux limites)](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/fichiers/laval.cfg)
     - [SOCBT.su2](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/fichiers/SOCBT3.su2)
     - [SOCBT.su2](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/fichiers/SOCBT3.geo)
 
