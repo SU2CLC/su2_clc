@@ -21,3 +21,31 @@ A l'intérieur de ces zones, il faut choisir la taille du maillage: est-elle con
 ## Les choix pour le modèle de résolution (à compléter)
 
 Il s'agit ici de la méthode utilisée pour faire converger la solution de façon à respecter les équations régissant l'écoulement. Pour cette étape, on détermine les équations mises en jeu à partir des caractéristiques du fluide, de la géométrie et des condtions aux limites. 
+
+
+# Exemple : configuration SOCBT
+
+On présente ici un exemple de choix pour le calcul d'un écoulement turbulent supersonique dont la géométrie est la configuration SOCBT.
+
+## Géométrie
+![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/annexes/figures/SOCBT_dim.PNG "Géométrie de la configuration SOCBT")
+
+Sur la figure ci-dessus, on présente la géométrie de la configuration SOCBT (les longueurs indiquées sont adimensionnées au diamètre de l'axe). Il s'agit ici du profil d'un objet 3D à symétrie de révolution. On sait donc que l'écoulement est invariant par rotation autour de cet axe : le problème est donc axisymétrique. C'est-à-dire qu'on peut raisonnablement étudier ce problème comme un cas 2D (en prenant comme géométrie la moitié du profil).
+
+## Nombres adimensionnés
+
+Pour compléter la définition du problème, on donne les nombres adimensionés suivants :
+
+![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/annexes/figures/Nombres_adim.png)
+
+## Maillage
+Etant donnée la nature turbulente de l'écoulement, il sera nécessaire d'avoir un maillage "fin" près de l'axe afin de prendre en compte tous les effets turbulents. On définira donc tout d'abord une zone de maillage correspondant à la zone turbulente. Le choix fait ici est de fixer la hauteur de cette zone au maximum de hauteur de la zone turbulente prédite par la solution de Blasius. 
+
+
+Maintenant que cette zone est délimitée, on fait le choix de la mailler avec une épaisseur de maille à prgression linéaire. On fait ce choix afin de prendre en compte les effets dû à la sous-couche moyenne (zone de l'écoulement turbulent proche de la paroi où les effets turbulents ne sont pas dominants). On détermine l'épaisseur de première maille à partir de l'épaisseur de cette sous-couche moyenne. On raisonne à partir du nombre de Reynolds, coefficient de trainée ainsi que l'épaisseur de la sous-couche moyenne. On impose:
+
+![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/annexes/figures/Raisonnement.png)
+
+## Modèle de résolution
+
+Etant donné la nature turbulente et supersonique du problème, on utilisera un modèle de résolution RANS qui prend en compte ces deux aspects.
