@@ -9,11 +9,11 @@ Ces informations vont permettre de déterminer les choix à faire sur le paramé
 En effet, on ne va pas utiliser un modèle turbulent pour un calcul d'écoulement laminaire. De même, une taille de maille de l'ordre du mètre ne permet pas de prendre en compte des effets visibles sur l'échelle du micron.
 
 
-## Les choix pour maillage
+## Les choix pour le maillage
 
 Il faut toujours adapter le maillage au problème : un maillage trop fin sera coûteux en terme de temps de calcul, un maillage trop grossier ne reflète pas la réalité du problème (il peut également y avoir un problème avec la forme du maillage).
 
-La premère chose à décider est la zone importante dans le calcul : là où se calcule la grandeur d'intérêt. A cet endroit, il faut un maillage ajusté au vu du problème. Par exemple dans le cas d'un calcul de portance sur l'aile d'un avion, il faut prendre en compte les effets visqueux autour de l'aile, le maillage autour le l'aile doit donc être plus fin que la couche turbulente (qu'on détermine avec la solution de Blasius). Dans ce même cas, il peut être astucieux d'augmenter la taille du maillge lorsqu'on s'éloigne de l'aile (cela réduit le temps de calcul). Un premier choix est donc le découpage en "zones" de l'espace.
+La première chose à décider est la zone importante dans le calcul : là où se calcule la grandeur d'intérêt. A cet endroit, il faut un maillage ajusté au vu du problème. Par exemple dans le cas d'un calcul de portance sur l'aile d'un avion, il faut prendre en compte les effets visqueux autour de l'aile, le maillage autour le l'aile doit donc être plus fin que la couche turbulente (qu'on détermine avec la solution de Blasius). Dans ce même cas, il peut être astucieux d'augmenter la taille du maillge lorsqu'on s'éloigne de l'aile (cela réduit le temps de calcul). Un premier choix est donc le découpage en "zones" de l'espace.
 
 A l'intérieur de ces zones, il faut choisir la taille du maillage: est-elle constante? Quelle est alors la taille de preimière maille? Maille-t-on avec des quadrilatères ou des triangles (dans le cas 3D: tétraèdres ou pavé droits)? On détermine tout ces paramètres à l'aide d'ordres de grandeurs, d'approximation, de la précision recherchée et des données du problèmes.
 
@@ -37,6 +37,8 @@ Sur la figure ci-dessus, on présente la géométrie de la configuration SOCBT (
 Pour compléter la définition du problème, on donne les nombres adimensionés suivants :
 
 ![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/annexes/figures/Nombres_adim.png)
+
+En considérant l'air comme un gaz parfait et en donnant la température (291,3 K) et la pression (27 707 Pa) loin de l'ogive, on peut déterminer toutes les caractérisiques de l'écoulement: vitesse (1 025,3 m/s), masse volumique (0,33 kg/m3) et viscosité (1,8.e-5).
 
 ## Maillage
 Etant donnée la nature turbulente de l'écoulement, il sera nécessaire d'avoir un maillage "fin" près de l'axe afin de prendre en compte tous les effets turbulents. On définira donc tout d'abord une zone de maillage correspondant à la zone turbulente. Le choix fait ici est de fixer la hauteur de cette zone au maximum de hauteur de la zone turbulente prédite par la solution de Blasius. 
