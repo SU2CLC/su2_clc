@@ -45,15 +45,38 @@ Pour compléter la définition du problème, on donne les nombres adimensionés 
 
 ![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/annexes/figures/Nombres_adim.png)
 
-En considérant l'air comme un gaz parfait et en donnant la température (291,3 K) et la pression (27 707 Pa) loin de l'ogive, on peut déterminer toutes les caractérisiques de l'écoulement: vitesse (1 025,3 m/s), masse volumique (0,33 kg/m3) et viscosité (1,8.e-5).
+En considérant l'air comme un gaz parfait et en donnant la température (291,3 K) et la pression (27 707 Pa) loin de l'ogive, on peut déterminer toutes les caractérisiques de l'écoulement: vitesse (1 025,3 m/s), masse volumique (0,33 kg/m3) et viscosité (1,8.e-5 Pa.s).
 
 ## Maillage
-Etant donnée la nature turbulente de l'écoulement, il sera nécessaire d'avoir un maillage "fin" près de l'axe afin de prendre en compte tous les effets turbulents. On définira donc tout d'abord une zone de maillage correspondant à la zone turbulente. Le choix fait ici est de fixer la hauteur de cette zone au maximum de hauteur de la zone turbulente prédite par la solution de Blasius. 
+Etant donnée la nature turbulente de l'écoulement, il sera nécessaire d'avoir un maillage "fin" près de l'axe afin de prendre en compte tous les effets turbulents. On définira donc tout d'abord une zone de maillage correspondant à la zone turbulente. Le choix fait ici est de fixer la hauteur de cette zone au maximum de hauteur de la zone turbulente prédite par la solution de Blasius : 
+
+![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/annexes/figures/Blasius.png)
+
+Ce qui nous donne comme épaisseur de la zone:
+
+![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/annexes/figures/Blasius_res.png)
 
 
-Maintenant que cette zone est délimitée, on fait le choix de la mailler avec une épaisseur de maille à prgression linéaire. On fait ce choix afin de prendre en compte les effets dû à la sous-couche moyenne (zone de l'écoulement turbulent proche de la paroi où les effets turbulents ne sont pas dominants). On détermine l'épaisseur de première maille à partir de l'épaisseur de cette sous-couche moyenne. On raisonne à partir du nombre de Reynolds, coefficient de trainée ainsi que l'épaisseur de la sous-couche moyenne. On impose:
 
-![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/annexes/figures/Raisonnement.png)
+
+Maintenant que cette zone est délimitée, on fait le choix de la mailler avec une épaisseur de maille à prgression linéaire. On fait ce choix afin de prendre en compte les effets dû à la sous-couche moyenne (zone de l'écoulement turbulent proche de la paroi où les effets turbulents ne sont pas dominants) tout en minimisant la taille du maillage. On détermine l'épaisseur de première maille à partir de l'épaisseur de cette sous-couche moyenne, autrement dit on impose:
+
+![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/annexes/figures/Cond.png)
+
+Par ailleurs, on a la relation suivante entre le coeffificnet de traînée, la vitesse dans la sous-couche moyenne et la vitesse d'écoulement en aval :
+
+![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/annexes/figures/Rel_coef.png)
+
+On peut ensuite relier le coefficient de traînée avec le nombre de Reynolds:
+
+![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/annexes/figures/Coef.png)
+
+Finalement, on utilise ces expressions pour déterminer l'épaisseur de première maille:
+
+![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/annexes/figures/Blasius.png)
+![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/annexes/figures/Res.png)
+
+On trouve donc une épaisseur de première maille de l'ordre du micron. 
 
 ## Modèle de résolution
 
