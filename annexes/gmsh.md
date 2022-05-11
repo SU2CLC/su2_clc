@@ -33,12 +33,22 @@ Si vous avez fait une erreur, sous la section Module, au-dessus du Edit Script, 
 
 ##  Création du maillage
 
+### Mailler
+
 Ensuite, nous revenons à Add de Geometry, nous trouvons la surface plane et l'utilisons pour définir une face fermée, et enfin nous générons le maillage en utilisant l'option 2D dans Mesh.
 
 ![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/annexes/figures/gmsh5.png "Obtention d'un maillage")
 
+### Modification de la forme
+
 Pour modifier la forme du maillage (locale ou globale), vous pouvez également choisir de remodeler le maillage d'une surface en un rectangle en utilisant mesh-define-recombine.
 
+Puis il faut choisir la surface que vous voulez modifier.
+**Attention** : Afin de normaliser l'orientation de la grille, nous devons utiliser mesh-define-transfinite-surface et choisir les sommets de la surface.
+
+### Modiciation de la précision
+
 Une fois que votre fichier de maillage est complet, vous pouvez encore modifier les paramètres en double-cliquant sur l'écran principal et en cliquant sur l'option "all mesh options", où vous pouvez ajuster la précision du maillage par taille d'élément.
+Il convient de noter que le nombre de points sélectionnés lors de la définition de la courbe aura également une influence décisive sur la précision du maillage final.
 
 En ce qui concerne la sortie, comme mentionné ci-dessus, il faut tenir compte du format de sortie et de l'ajout de suffixes.
