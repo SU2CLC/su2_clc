@@ -4,7 +4,7 @@ Après avoir terminé ce tutoriel, l’utilisateur sera familiarisé avec le mai
 La géométrie étudiée est la géométrie dite “ SOCBT”, pour Secant Ogive Cylinder Boat-Tail, pouvant se traduire par ogive cylindrique à arrière coupé. Celle-ci sera soumise numériquement à de l’air à vitesse supersonique.
 Par conséquent, les capacités suivantes de la chaîne calcul seront présentées dans ce tutoriel :
  * Création d’un maillage à géométrie variable avec GMSH
- * ? (à ajouter)
+ * Calcul d'une solution de problème compressible turbulent
 
 ## Ressources
 
