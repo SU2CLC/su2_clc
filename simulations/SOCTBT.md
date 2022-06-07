@@ -1,6 +1,6 @@
 ## Objectifs
 
-Après avoir terminé ce tutoriel, l’utilisateur sera familiarisé avec le maillage à géométrie variable, l’écoulement à vitesse supersonique, et aura vu un premier cas d’écoulement autour d’une géométrie typique de mécanique des fluides. 
+Après avoir terminé ce tutoriel, l’utilisateur sera familiarisé avec le maillage à géométrie variable, l’écoulement à vitesse supersonique, et aura vu un premier cas d’écoulement autour d’une géométrie typique de l'aérospatiale. 
 La géométrie étudiée est la géométrie dite “ SOCBT”, pour Secant Ogive Cylinder Boat-Tail, pouvant se traduire par ogive cylindrique à arrière coupé. Celle-ci sera soumise numériquement à de l’air à vitesse supersonique.
 Par conséquent, les capacités suivantes de SU2 seront présentées dans ce tutoriel :
  * Création d’un maillage à géométrie variable
