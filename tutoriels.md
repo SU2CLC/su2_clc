@@ -9,7 +9,7 @@ Simulations
 
 [Laminar Cylinder](./simulations/laminar_cylinder.html)
 
-[SOCBT](./simulations/SOCBT.html)
+[SOCBT](./simulations/SOCBT.md)
 
 Annexes
 
