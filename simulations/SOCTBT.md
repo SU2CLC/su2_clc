@@ -16,7 +16,7 @@ Le tutoriel suivant vous guidera à travers les étapes requises pour résoudre 
 
 ## Configuration SOCBT
 
-La configuration SOCBT (secant-ogive-cylinder-boattail) correspond à l’écoulement de l’air autour d’une ogive à vitesse supersonique. On décrit dans cette section la géométrie de l’ogive puis on donne les autres données du problème.
+La configuration SOCBT correspond à l’écoulement de l’air autour d’une ogive à vitesse supersonique. On décrit dans cette section la géométrie de l’ogive puis on donne les autres données du problème.
 
 ### Géométrie
 
