@@ -9,6 +9,8 @@ Simulations
 
 [Laminar Cylinder](./simulations/laminar_cylinder.html)
 
+[SOCBT](./simulations/SOCBT.html)
+
 Annexes
 
 [GMSH](./annexes/gmsh)
