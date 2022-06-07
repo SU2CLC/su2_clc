@@ -8,7 +8,7 @@ Par conséquent, les capacités suivantes de la chaîne calcul seront présenté
 
 ## Ressources
 
-L’objectif de ce tutoriel est de créer de toute pièce le maillage et le fichier de configuration. Vous n’aurez donc besoin que du template de fichier de configuration SU2, disponible ici. Si vous bloquez sur l’une des parties du tutoriel et souhaitez passez à la suite, vous trouverez le fichier de maillage complet ici et le fichier de configuration complété ici.
+L’objectif de ce tutoriel est de créer le maillage et le fichier de configuration. Vous n’aurez donc besoin que du template de fichier de configuration SU2, disponible ici. Si vous bloquez sur l’une des parties du tutoriel et souhaitez passez à la suite, vous trouverez le fichier de maillage complet ici et le fichier de configuration complété ici.
 
 ## Tutoriel
 Le tutoriel suivant vous guidera à travers les étapes requises pour résoudre l’écoulement à travers le canal en utilisant SU2. Il est supposé que vous avez déjà installé SU2_CFD. Si ce n’est fait, veuillez consulter la page Installation.
