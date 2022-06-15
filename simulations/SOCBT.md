@@ -65,3 +65,5 @@ Ces considérations ainsi que la symétrie axiale de l'écoulement nous amènent
 ![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/annexes/figures/Maillage_SOCBT.png)
 
 ## Calcul de la solution
+
+
