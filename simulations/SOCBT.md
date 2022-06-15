@@ -60,7 +60,7 @@ Finalement, on utilise ces expressions pour déterminer l'épaisseur de premièr
 On trouve donc une épaisseur de première maille de l'ordre du micron.
 
 
-On en vient à utiliser le maillage suivant :
+Ces considérations ainsi que la symétrie axiale de l'écoulement nous amènent à utiliser le maillage suivant :
 
 ![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/annexes/figures/Maillage_SOCBT.png)
 
