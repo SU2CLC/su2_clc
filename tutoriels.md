@@ -11,6 +11,8 @@ Simulations
 
 [SOCBT](./simulations/SOCBT.md)
 
+[Laval](./simulations/laval.html)
+
 Annexes
 
 [GMSH](./annexes/gmsh)
