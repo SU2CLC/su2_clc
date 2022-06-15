@@ -31,16 +31,14 @@ On spécifie maintenant les données relatives à l’écoulement. L’entrée d
 L’écoulement est donc compressible turbulent.
 
 ## Maillage
-Etant donnée la nature turbulente de l'écoulement, il sera nécessaire d'avoir un maillage "fin" près de l'axe afin de prendre en compte tous les effets turbulents. On définira donc tout d'abord une zone de maillage correspondant à la zone turbulente. Le choix fait ici est de fixer la hauteur de cette zone au maximum de hauteur de la zone turbulente prédite par la solution de Blasius : 
+
+On utilisera un maillage permettant de prendre en compte les effets turbulents comme la couche limite turbulente et la sous-couche moyenne. Pour cela, il sera nécessaire d'avoir un maillage "fin" près de l'axe. On définira donc tout d'abord une zone de maillage correspondant à la zone turbulente qui est plus large que la sous-couche moyenne. Le choix fait ici est de fixer la hauteur de cette zone au maximum de hauteur de la zone turbulente prédite par la solution de Blasius : 
 
 ![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/annexes/figures/Blasius.png)
 
-Ce qui nous donne comme épaisseur de la zone:
+Ce qui nous donne comme épaisseur de la zone :
 
 ![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/annexes/figures/Blasius_res.png)
-
-
-
 
 Maintenant que cette zone est délimitée, on fait le choix de la mailler avec une épaisseur de maille à prgression linéaire. On fait ce choix afin de prendre en compte les effets dû à la sous-couche moyenne (zone de l'écoulement turbulent proche de la paroi où les effets turbulents ne sont pas dominants) tout en minimisant la taille du maillage. On détermine l'épaisseur de première maille à partir de l'épaisseur de cette sous-couche moyenne, autrement dit on impose:
 
@@ -60,5 +58,10 @@ Finalement, on utilise ces expressions pour déterminer l'épaisseur de premièr
 ![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/annexes/figures/Res.png)
 
 On trouve donc une épaisseur de première maille de l'ordre du micron.
+
+
+On en vient à utiliser le maillage suivant :
+
+![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/annexes/figures/Maillage_SOCBT.png)
 
 ## Calcul de la solution
