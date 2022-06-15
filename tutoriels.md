@@ -9,6 +9,8 @@ Simulations
 
 [Laminar Cylinder](./simulations/laminar_cylinder.html)
 
+[Laval](./simulations/laval.html)
+
 Annexes
 
 [GMSH](./annexes/gmsh)
