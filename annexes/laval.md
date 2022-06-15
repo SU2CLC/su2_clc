@@ -18,7 +18,7 @@ Le tutoriel suivant vous guidera à travers les étapes requises pour résoudre 
 
 La tuyère de Laval est définie par l'équation mathématique suivante:
 
-![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/annexes/figures/laval_def.PNG "Définition mathématique de la tuyère de Laval")
+![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/annexes/figures/laval_def.png "Définition mathématique de la tuyère de Laval")
 
 À l'aide de Python, on peut modifier le fichier .geo de GMSH afin de placer 100 points le long d'une ligne et de les relier. Pour se faire, il suffit de placer les point avec:
 
@@ -34,7 +34,7 @@ Line(i) = {j,k};
 
 Ceci nous permet enfin d'obtenir la géométrie suivante:
 
-![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/annexes/figures/laval_geo.PNG "Géométrie de la tuyère de Laval")
+![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/annexes/figures/laval_geo.png "Géométrie de la tuyère de Laval")
 
 ### Données du problème
 
@@ -55,6 +55,6 @@ Un maillage simple avec des mailles triangulaires a été réalisé.
 
 Des résultats ont été obtenus après résolution par SU2, ceux-ci sont comparables aux résultats du BE2 du S9 option aéronautique. On notera une légère différence due aux conditions initiales qui ne sont pas strictement équivalentes entre les deux simulations ainsi qu'au fait que notre simulation est en fait en 2D et que nous ramenons les résultats ceux d'une simulation quasi-1D par des opérations de moyennage sur chaque section à x constant.
 
-![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/annexes/figures/laval_pression.PNG "Pression")
+![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/annexes/figures/laval_pression.png "Pression")
 
-![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/annexes/figures/laval_mach.PNG "Nombre de Mach")
+![alt text](https://raw.githubusercontent.com/SU2CLC/su2_clc/main/annexes/figures/laval_mach.png "Nombre de Mach")
